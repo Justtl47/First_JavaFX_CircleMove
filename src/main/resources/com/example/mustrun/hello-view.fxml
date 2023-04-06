@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<VBox alignment="CENTER" prefHeight="520.0" prefWidth="526.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mustrun.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="Yo" />
+   <AnchorPane prefHeight="421.0" prefWidth="486.0">
+      <children>
+         <Button layoutX="217.0" layoutY="358.0" mnemonicParsing="false" onAction="#down" text="DOWN" />
+         <Button layoutX="219.0" layoutY="14.0" mnemonicParsing="false" onAction="#up" prefHeight="26.0" prefWidth="50.0" text="UP" />
+         <Button layoutY="186.0" mnemonicParsing="false" onAction="#left" text="LEFT" />
+         <Button layoutX="435.0" layoutY="186.0" mnemonicParsing="false" onAction="#right" text="RIGHT" />
+         <Circle fx:id="myCircle" fill="DODGERBLUE" layoutX="243.0" layoutY="199.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      </children>
+   </AnchorPane>
+</VBox>
